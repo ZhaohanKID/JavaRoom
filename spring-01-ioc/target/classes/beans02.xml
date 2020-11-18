@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="user" class="com.kuang.entity.User">
+        <property name="name" value="邓紫棋G.M.E."/>
+    </bean>-->
+
+    <bean id="user2" class="com.kuang.entity.User">
+        <constructor-arg index="0" value="周杰伦"/>
+        <constructor-arg index="1" value="40"/>
+    </bean>
+
+    <alias name="user2" alias="user"/>
+
+  <bean id="user3" class="com.kuang.entity.User">
+        <constructor-arg type="java.lang.String" value="任嘉伦"/>
+        <constructor-arg type="int" value="30"/>
+    </bean>
+    <!--
+    <bean id="user4" class="com.kuang.entity.User">
+        <constructor-arg name="name" value="李易峰"/>
+        <constructor-arg name="age" value="32"/>
+    </bean>-->
+    
+<!--    <bean id="user5" class="com.kuang.entity.User">
+        <constructor-arg ref="user2"/>
+        <constructor-arg ref="username"/>
+    </bean>
+    <bean id="username" class="java.lang.String"/>
+    <bean id="userage" class=""-->
+</beans>
