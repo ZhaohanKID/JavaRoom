@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--  协作开发：这个总的spring配置文件进行new实现类
+  而其他的专注于进行数据库的开发(而其他的配置又是固定的，不会再变了)-->
+    <import resource="spring-dao.xml"/>
+
+    <bean id="userMapper" class="com.kuang.dao.UserMapperImpl">
+        <property name="sqlSession" ref="sqlSession"/>
+    </bean>
+
+</beans>

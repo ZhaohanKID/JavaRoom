@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+<!--    <properties resource="db.properties"/>-->
+
+<!--  一般在mybatis的配置文件里剩下两项，别名和设置(比如日志)  -->
+
+    <!--  日志日志  -->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+<!--        <setting name="logImpl" value="LOG4J"/>-->
+    </settings>
+
+    <!--  给类起一个别名  -->
+    <typeAliases>
+        <package name="com.kuang.pojo"/>
+    </typeAliases>
+
+
+    <!--  在spring中绑定之后这段也不需要了       绑定接口 -->
+<!--    <mappers>
+        <mapper class="com.kuang.dao.UserMapper"/>
+    </mappers>-->
+</configuration>
