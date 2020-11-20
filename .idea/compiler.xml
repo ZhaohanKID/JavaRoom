@@ -7,13 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-01-ioc" />
-        <module name="spring-06-aop" />
         <module name="spring-04-new" />
         <module name="spring-02-di" />
         <module name="spring-03-test" />
         <module name="spring-07-mybaits" />
-        <module name="spring-04-annotation" />
+        <module name="spring-06-aop" />
         <module name="spring-05-proxy" />
+        <module name="spring-04-annotation" />
+        <module name="spring-08-test" />
       </profile>
     </annotationProcessing>
   </component>
