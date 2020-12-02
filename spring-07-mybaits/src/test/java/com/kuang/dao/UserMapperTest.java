@@ -41,4 +41,8 @@ public class UserMapperTest {
             System.out.println(user);
         }
     }
+    @Test
+    public void t4() {
+
+    }
 }
